@@ -46,7 +46,7 @@ export default function ContributePage() {
           <div className="md:w-1/2">
             <div className="relative h-64 wiki-image">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/primary/background-img.png?height=400&width=600"
                 alt="Wiki Contributors"
                 fill
                 className="object-cover"

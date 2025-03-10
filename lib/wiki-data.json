@@ -70,22 +70,6 @@
           "icon": "Users"
         }
       ]
-    },
-    {
-      "title": "Editor Resources",
-      "description": "Resources for wiki editors",
-      "subcategories": [
-        {
-          "name": "Ashea Wiki Editors Guide",
-          "slug": "editors-guide",
-          "icon": "FileEdit"
-        },
-        {
-          "name": "MediaWiki Editing Help",
-          "slug": "mediawiki-help",
-          "icon": "HelpCircle"
-        }
-      ]
     }
   ],
   "nations": {
@@ -237,7 +221,9 @@
         "lastUpdated": "10/15/24"
       }
     ],
-    "pages": ["Imperium Sanctum Solaris"]
+    "pages": [
+      "Imperium Sanctum Solaris"
+    ]
   },
   "wars": {
     "agiyanWars": [
@@ -251,15 +237,25 @@
           "The Siege of Hochberg",
           "The Battle of Oryza"
         ],
-        "belligerents": ["The Chayuthaya Empire", "Royaume Madárès", "The Kingdom of Oryza", "The Etharium Empire"],
+        "belligerents": [
+          "The Chayuthaya Empire",
+          "Royaume Madárès",
+          "The Kingdom of Oryza",
+          "The Etharium Empire"
+        ],
         "winner": "The Chayuthaya Empire",
         "startDate": "8/11/24",
         "endDate": "10/16/24"
       },
       {
         "name": "The United North Coup",
-        "battles": ["The Siege of Aesir"],
-        "belligerents": ["The United North", "United North Revolutionists"],
+        "battles": [
+          "The Siege of Aesir"
+        ],
+        "belligerents": [
+          "The United North",
+          "United North Revolutionists"
+        ],
         "winner": "United North Revolutionists",
         "startDate": "Unknown",
         "endDate": "Unknown"
@@ -313,26 +309,37 @@
       {
         "name": "Mythros' War",
         "type": "Server Event",
-        "belligerents": ["The Lockwood Empire", "The Baker's Rebellion"],
+        "belligerents": [
+          "The Lockwood Empire",
+          "The Baker's Rebellion"
+        ],
         "winner": "TBD",
         "date": "Ongoing"
       },
       {
         "name": "The Damnation Campaign",
         "type": "RP Announcement War",
-        "belligerents": ["The Chayuthaya Empire", "Damnation"],
+        "belligerents": [
+          "The Chayuthaya Empire",
+          "Damnation"
+        ],
         "winner": "The Chayuthaya Empire",
         "date": "10/17/24"
       },
       {
         "name": "The Cornflower Campaign",
         "type": "RP Announcement War",
-        "belligerents": ["The Chayuthaya Empire", "Republic of Cornflower"],
+        "belligerents": [
+          "The Chayuthaya Empire",
+          "Republic of Cornflower"
+        ],
         "winner": "The Chayuthaya Empire",
         "date": "10/19/24"
       }
     ],
-    "pages": ["Raid on Trivia City"]
+    "pages": [
+      "Raid on Trivia City"
+    ]
   },
   "players": {
     "list": [
@@ -438,7 +445,9 @@
         "subspecies": "None"
       }
     ],
-    "pages": ["Dark Elves", "Dragonborn"]
+    "pages": [
+      "Dark Elves",
+      "Dragonborn"
+    ]
   }
 }
-

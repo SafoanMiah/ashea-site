@@ -14,19 +14,19 @@ export default function PlayersPage() {
       name: "Scar883",
       rank: "Owner",
       ocs: "Unknown",
-      imageSrc: "/placeholder.svg?height=200&width=200",
+      imageSrc: "/primary/background-img.png?height=200&width=200",
     },
     {
       name: "TunaFishy",
       rank: "Leadership (Lead of Moderation & Events)",
       ocs: "Empress Koyuki Akaimo and Valeria Hadroni",
-      imageSrc: "/placeholder.svg?height=200&width=200",
+      imageSrc: "/primary/background-img.png?height=200&width=200",
     },
     {
       name: "Voleia",
       rank: "Leadership (Lead of Development)",
       ocs: "Unknown",
-      imageSrc: "/placeholder.svg?height=200&width=200",
+      imageSrc: "/primary/background-img.png?height=200&width=200",
     },
   ]
 
@@ -50,7 +50,7 @@ export default function PlayersPage() {
           {featuredPlayers.map((player, index) => (
             <div key={index} className="wiki-card glass-panel-hover text-center">
               <div className="relative h-32 w-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary/20">
-                <Image src={player.imageSrc || "/placeholder.svg"} alt={player.name} fill className="object-cover" />
+                <Image src={player.imageSrc || "/primary/background-img.png"} alt={player.name} fill className="object-cover" />
               </div>
               <h3 className="text-xl font-bold mb-1 text-primary">{player.name}</h3>
               <p className="text-sm text-muted-foreground mb-3">{player.rank}</p>
@@ -84,7 +84,7 @@ export default function PlayersPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="relative h-64 wiki-image">
             <Image
-              src="/placeholder.svg?height=300&width=400"
+              src="/primary/background-img.png?height=300&width=400"
               alt="Player Race Distribution"
               fill
               className="object-cover"
@@ -96,7 +96,7 @@ export default function PlayersPage() {
 
           <div className="relative h-64 wiki-image">
             <Image
-              src="/placeholder.svg?height=300&width=400"
+              src="/primary/background-img.png?height=300&width=400"
               alt="Player Nation Distribution"
               fill
               className="object-cover"

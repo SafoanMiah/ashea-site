@@ -13,21 +13,25 @@ const cinzel = Cinzel({
   weight: ["400", "500", "600", "700", "800", "900"],
 })
 
-export const metadata: Metadata = {
-  title: "ASHEA - Fantasy Roleplay & Geopolitics Minecraft Server",
-  description:
-    "Join Ashea, a fantasy roleplay and geopolitics Minecraft server with custom races, nations, quests, and a rich 3+ year history.",
-    generator: 'v0.dev'
+export const metadata = {
+  title: "Ashea - Fantasy Roleplay & Geopolitics Minecraft Server",
+  description: "Join Ashea, a fantasy roleplay and geopolitics Minecraft server with custom races, nations, quests, and a rich 3+ year history.",
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
-// Add the custom-scrollbar class to the html or body element
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en" className="custom-scrollbar">
-      <body className={`${inter.variable} ${cinzel.variable} font-sans antialiased`}>
+    <html lang="en" className="custom-scrollbar" suppressHydrationWarning>
+      <body className={`${inter.variable} ${cinzel.variable} font-sans antialiased`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Navbar />
-          <main>{children}</main>
+          <main className="min-h-screen">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

@@ -11,11 +11,18 @@ export default function JoinPage() {
   return (
     <div className="page-transition pt-20">
       {/* Hero Section */}
-      <section className="bg-muted py-12 md:py-20">
+      <section
+        className="bg-muted py-12 md:py-20 relative"
+        style={{
+          backgroundImage: "url('/primary/nations.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="container px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Join Ashea</h1>
-            <p className="text-lg text-muted-foreground mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-green-500 green-text-glow">Join Ashea</h1>
+            <p className="text-lg text-muted-foreground mb-8 text-white">
               Ready to start your adventure in the world of Agiya? Follow these simple steps to join our community.
             </p>
           </div>
@@ -91,7 +98,7 @@ export default function JoinPage() {
             <div className="relative">
               <div className="fantasy-border rounded-lg overflow-hidden">
                 <Image
-                  src="/join-server.jpg"
+                  src="/primary/world-map.jpg"
                   alt="Join Ashea Server"
                   width={600}
                   height={400}
@@ -100,7 +107,7 @@ export default function JoinPage() {
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 backdrop-blur-sm rounded-lg p-4 flex flex-col items-center justify-center border border-primary/30">
                 <p className="font-cinzel font-bold text-lg">13+</p>
-                <p className="text-xs text-center text-muted-foreground">Age Requirement</p>
+                <p className="text-xs text-center text-muted-foreground text-white">Age Requirement</p>
               </div>
             </div>
           </div>
@@ -218,7 +225,7 @@ export default function JoinPage() {
             <div className="order-1 lg:order-2">
               <div className="fantasy-border rounded-lg overflow-hidden">
                 <Image
-                  src="/discord-community.jpg"
+                  src="/primary/about.png"
                   alt="Discord Community"
                   width={600}
                   height={400}

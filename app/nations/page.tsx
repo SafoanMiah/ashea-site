@@ -18,7 +18,6 @@ export default function NationsPage() {
   const [isClient, setIsClient] = useState(false)
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedRace, setSelectedRace] = useState("all")
-  const [sortOrder, setSortOrder] = useState("default")
   const [races, setRaces] = useState<string[]>([])
 
   // Initialize client-side state
@@ -28,7 +27,7 @@ export default function NationsPage() {
     setRaces([...new Set(data.nations.map((nation) => nation.race))])
   }, [])
 
-  // Filter and sort nations
+  // Filter nations
   const filteredNations = data.nations
     .filter((nation) => {
       const matchesSearch =
@@ -37,14 +36,6 @@ export default function NationsPage() {
       const matchesRace = selectedRace === "all" || nation.race === selectedRace
 
       return matchesSearch && matchesRace
-    })
-    .sort((a, b) => {
-      if (sortOrder === "default") return 0
-      if (sortOrder === "populationAsc") return a.population - b.population
-      if (sortOrder === "populationDesc") return b.population - a.population
-      if (sortOrder === "nameAsc") return a.name.localeCompare(b.name)
-      if (sortOrder === "nameDesc") return b.name.localeCompare(a.name)
-      return 0
     })
 
   // Only render content on the client to avoid hydration mismatch
@@ -55,11 +46,18 @@ export default function NationsPage() {
   return (
     <div className="page-transition pt-20">
       {/* Hero Section */}
-      <section className="bg-muted py-12 md:py-20">
-        <div className="container px-4">
+      <section
+        className="bg-muted py-12 md:py-20 relative"
+        style={{
+          backgroundImage: "url('/primary/nations.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="container px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Nation Picker</h1>
-            <p className="text-lg text-muted-foreground mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-green-500 green-text-glow">Nation Picker</h1>
+            <p className="text-lg text-gray-200 mb-8">
               Explore the diverse nations of Ashea and find your perfect home in our fantasy world.
             </p>
           </div>
@@ -97,21 +95,7 @@ export default function NationsPage() {
               </SelectContent>
             </Select>
 
-            <Select value={sortOrder} onValueChange={setSortOrder}>
-              <SelectTrigger className="w-full">
-                <div className="flex items-center gap-2">
-                  <Users size={18} />
-                  <SelectValue placeholder="Sort by" />
-                </div>
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="default">Default</SelectItem>
-                <SelectItem value="populationAsc">Population (Low to High)</SelectItem>
-                <SelectItem value="populationDesc">Population (High to Low)</SelectItem>
-                <SelectItem value="nameAsc">Name (A-Z)</SelectItem>
-                <SelectItem value="nameDesc">Name (Z-A)</SelectItem>
-              </SelectContent>
-            </Select>
+
           </div>
         </div>
       </section>
@@ -128,20 +112,11 @@ export default function NationsPage() {
                 >
                   <div className="h-40 relative">
                     <Image
-                      src={nation.imageSrc || "/placeholder.svg"}
+                      src={nation.imageSrc || "/primary/background-img.png"}
                       alt={nation.name}
                       fill
                       className="object-cover"
                     />
-                    <div className="absolute top-4 left-4">
-                      <Image
-                        src={nation.flagSrc || "/placeholder.svg"}
-                        alt={`${nation.name} Flag`}
-                        width={40}
-                        height={40}
-                        className="rounded-md border border-white/20 shadow-lg"
-                      />
-                    </div>
                     <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1 flex items-center gap-1">
                       <Users size={14} className="text-primary" />
                       <span className="text-xs text-white">{nation.population}</span>
@@ -179,7 +154,6 @@ export default function NationsPage() {
                 onClick={() => {
                   setSearchTerm("")
                   setSelectedRace("all")
-                  setSortOrder("default")
                 }}
               >
                 Reset Filters

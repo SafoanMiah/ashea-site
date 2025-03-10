@@ -43,12 +43,14 @@ export function StoreItemCard({ item }: { item: StoreItem }) {
           ))}
         </ul>
       </div>
-      <Link href={item.kofiLink} target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
-        <Button className="w-full gap-2 bg-primary hover:bg-primary/90 text-primary-foreground green-glow">
-          View on Ko-fi
-          <ExternalLink size={16} />
-        </Button>
-      </Link>
+      <div className="mt-auto">
+        <Link href={item.kofiLink} target="_blank" rel="noopener noreferrer" className="w-full">
+          <Button className="w-full gap-2 bg-primary hover:bg-primary/90 text-primary-foreground green-glow">
+            View on Ko-fi
+            <ExternalLink size={16} />
+          </Button>
+        </Link>
+      </div>
     </GlassCard>
   )
 }

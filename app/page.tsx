@@ -18,24 +18,26 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-section min-h-[90vh] flex items-center justify-center pt-20"
         style={{
-          backgroundImage: "url('/background-img.png')",
+          backgroundImage: "url('/primary/background-img.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}>
         <div className="container px-4 py-16 md:py-24 flex flex-col items-center text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg hover:green-text-glow">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-green-600 mb-6 drop-shadow-lg green-text-glow animate-pulse-slow">
             {data.homepage.hero.title}
           </h1>
-          <p className="text-xl md:text-2xl font-cinzel text-white/90 mb-8 drop-shadow-md">
+          <p className="text-xl md:text-2xl font-cinzel font-bold text-white/90 mb-8 drop-shadow-md hover:text-glow">
             {data.homepage.hero.subtitle}
           </p>
-          <p className="max-w-3xl text-white/80 mb-10 text-lg">{data.homepage.hero.description}</p>
+          <p className="max-w-3xl text-white/80 mb-10 text-lg hover:text-glow-subtle">
+            {data.homepage.hero.description}
+          </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/join">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/80 text-primary-foreground hover:green-glow hover:pulse-green"
+                className="bg-primary hover:bg-primary/80 text-primary-foreground green-glow hover:pulse-green"
               >
                 Join Ashea
               </Button>
@@ -44,7 +46,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/20 bg-black/30 backdrop-blur-sm hover:bg-black/50 text-white"
+                className="border-white/20 bg-black/30 backdrop-blur-sm hover:bg-black/50 text-white hover:green-glow"
               >
                 Learn More
               </Button>
@@ -84,7 +86,7 @@ export default function Home() {
             <div className="relative">
               <div className="fantasy-border rounded-lg overflow-hidden hover:green-glow">
                 <Image
-                  src="/world-map.jpg"
+                  src="/primary/world-map.jpg"
                   alt="World of Agiya Map"
                   width={600}
                   height={400}
@@ -147,10 +149,10 @@ export default function Home() {
           </div>
 
           <Suspense fallback={<div>Loading store items...</div>}>
-            <Carousel 
-              itemsToShow={3} 
-              showDots={true} 
-              showArrows={true} 
+            <Carousel
+              itemsToShow={3}
+              showDots={true}
+              showArrows={true}
               className="px-4"
               autoPlay={true}
               autoPlaySpeed={6000}
@@ -199,7 +201,7 @@ export default function Home() {
             <div className="order-1 lg:order-2 relative">
               <div className="fantasy-border rounded-lg overflow-hidden hover:green-glow">
                 <Image
-                  src="/join-cta.jpg"
+                  src="/primary/payments.png"
                   alt="Join Ashea"
                   width={600}
                   height={400}

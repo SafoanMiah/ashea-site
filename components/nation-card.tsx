@@ -8,7 +8,6 @@ import { GlassCard } from "@/components/glass-card"
 export interface Nation {
   name: string;
   imageSrc: string;
-  flagSrc: string;
   race: string;
   government: string;
   description: string;
@@ -26,9 +25,6 @@ export function NationCard({ nation }: { nation: Nation }) {
           height={225}
           className="w-full h-full object-cover"
         />
-        <div className="absolute top-2 right-2 w-8 h-8 rounded-full overflow-hidden border-2 border-white/50">
-          <Image src={nation.flagSrc} alt={`${nation.name} flag`} width={32} height={32} className="w-full h-full" />
-        </div>
       </div>
       <h3 className="font-cinzel font-bold text-xl text-primary mb-2">{nation.name}</h3>
       <div className="flex flex-wrap gap-2 mb-3">

@@ -48,7 +48,7 @@ export default function WikiHomePage() {
         {/* Featured Image */}
         <div className="mb-12">
           <div className="wiki-image relative h-64 md:h-80 green-glow">
-            <Image src="/placeholder.svg?height=400&width=800" alt="Ashea World Map" fill className="object-cover" />
+            <Image src="/primary/background-img.png?height=400&width=800" alt="Ashea World Map" fill className="object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex items-end">
               <div className="p-6">
                 <h3 className="text-white text-xl font-bold mb-2 green-text-glow">Explore the World of Agiya</h3>
@@ -106,7 +106,7 @@ export default function WikiHomePage() {
                 </div>
                 <div className="relative h-32 wiki-image mb-3 green-shadow">
                   <Image
-                    src="/placeholder.svg?height=200&width=400"
+                    src="/primary/nations.png?height=200&width=400"
                     alt="Chayuthaya Empire"
                     fill
                     className="object-cover"
@@ -133,7 +133,7 @@ export default function WikiHomePage() {
                 </div>
                 <div className="relative h-32 wiki-image mb-3 green-shadow">
                   <Image
-                    src="/placeholder.svg?height=200&width=400"
+                    src="/primary/payments.png?height=200&width=400"
                     alt="Battle of Oryza"
                     fill
                     className="object-cover"
@@ -159,7 +159,7 @@ export default function WikiHomePage() {
             </p>
             <div className="relative h-40 wiki-image mb-6 green-glow">
               <Image
-                src="/placeholder.svg?height=300&width=600"
+                src="/primary/.png?height=300&width=600"
                 alt="Contribute to Wiki"
                 fill
                 className="object-cover"

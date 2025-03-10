@@ -9,40 +9,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Image src="/logo.png" alt="Ashea Logo" width={32} height={32} className="w-8 h-8" />
+              <Image src="/primary/logo.png" alt="Ashea Logo" width={32} height={32} className="w-8 h-8" />
               <span className="font-cinzel font-bold text-xl text-primary green-text-glow">ASHEA</span>
-            </div>
-            <p className="text-sm text-muted-foreground">
-              Fantasy Roleplay & Geopolitics Server with a rich 3+ year history.
-            </p>
-            <div className="flex gap-4">
-              <Link href="https://discord.gg/ashea" target="_blank" rel="noopener noreferrer">
-                <Image
-                  src="/discord-icon.svg"
-                  alt="Discord"
-                  width={24}
-                  height={24}
-                  className="opacity-70 hover:opacity-100 transition-opacity text-primary"
-                />
-              </Link>
-              <Link href="https://twitter.com/asheamc" target="_blank" rel="noopener noreferrer">
-                <Image
-                  src="/twitter-icon.svg"
-                  alt="Twitter"
-                  width={24}
-                  height={24}
-                  className="opacity-70 hover:opacity-100 transition-opacity text-primary"
-                />
-              </Link>
-              <Link href="https://www.reddit.com/r/ashea" target="_blank" rel="noopener noreferrer">
-                <Image
-                  src="/reddit-icon.svg"
-                  alt="Reddit"
-                  width={24}
-                  height={24}
-                  className="opacity-70 hover:opacity-100 transition-opacity text-primary"
-                />
-              </Link>
             </div>
           </div>
 
@@ -130,7 +98,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-6 border-t border-primary/20 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Ashea Minecraft Server. All rights reserved.
+            &copy; {new Date().getFullYear()} Created by Saf for Ashea. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link href="/privacy" className="text-xs text-muted-foreground hover:text-primary">

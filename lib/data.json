@@ -41,7 +41,7 @@
       "location": "Northern Continent",
       "population": 24,
       "flagSrc": "/flag1.svg",
-      "imageSrc": "/nation1.jpg",
+      "imageSrc": "/nations/nation1.jpg",
       "discordLink": "https://discord.gg/eldoria"
     },
     {
@@ -53,7 +53,7 @@
       "location": "Eastern Mountains",
       "population": 18,
       "flagSrc": "/flag2.svg",
-      "imageSrc": "/nation2.jpg",
+      "imageSrc": "/nations/nation2.jpg",
       "discordLink": "https://discord.gg/drakevale"
     },
     {
@@ -65,7 +65,7 @@
       "location": "Southern Forests",
       "population": 22,
       "flagSrc": "/flag3.svg",
-      "imageSrc": "/nation3.jpg",
+      "imageSrc": "/nations/nation3.jpg",
       "discordLink": "https://discord.gg/sylvandale"
     },
     {
@@ -77,7 +77,7 @@
       "location": "Volcanic Islands",
       "population": 15,
       "flagSrc": "/flag4.svg",
-      "imageSrc": "/nation4.jpg",
+      "imageSrc": "/nations/nation4.jpg",
       "discordLink": "https://discord.gg/grimhold"
     },
     {
@@ -89,7 +89,7 @@
       "location": "Western Isles",
       "population": 20,
       "flagSrc": "/flag5.svg",
-      "imageSrc": "/nation5.jpg",
+      "imageSrc": "/nations/nation5.jpg",
       "discordLink": "https://discord.gg/azuremist"
     },
     {
@@ -101,7 +101,7 @@
       "location": "Central Mountains",
       "population": 16,
       "flagSrc": "/flag6.svg",
-      "imageSrc": "/nation6.jpg",
+      "imageSrc": "/nations/nation6.jpg",
       "discordLink": "https://discord.gg/ironforge"
     }
   ],
@@ -185,7 +185,7 @@
         "Trade bonuses",
         "Faster skill learning"
       ],
-      "imageSrc": "/race-human.jpg"
+      "imageSrc": "/nations/nation1.jpg"
     },
     {
       "name": "Neko",
@@ -195,7 +195,7 @@
         "Fall damage reduction",
         "Enhanced speed"
       ],
-      "imageSrc": "/race-neko.jpg"
+      "imageSrc": "/nations/nation2.jpg"
     },
     {
       "name": "Demon",
@@ -205,7 +205,7 @@
         "Combat strength",
         "Nether affinity"
       ],
-      "imageSrc": "/race-demon.jpg"
+      "imageSrc": "/nations/nation3.jpg"
     },
     {
       "name": "Dragonborn",
@@ -215,7 +215,7 @@
         "Breath weapon",
         "Mining efficiency"
       ],
-      "imageSrc": "/race-dragonborn.jpg"
+      "imageSrc": "/nations/nation4.jpg"
     },
     {
       "name": "Elf",
@@ -225,7 +225,7 @@
         "Archery bonus",
         "Forest navigation"
       ],
-      "imageSrc": "/race-elf.jpg"
+      "imageSrc": "/nations/nation5.jpg"
     },
     {
       "name": "Dwarf",
@@ -235,7 +235,69 @@
         "Poison resistance",
         "Mining expertise"
       ],
-      "imageSrc": "/race-dwarf.jpg"
+      "imageSrc": "/nations/nation6.jpg"
+    },
+    {
+      "name": "Shapeshifter",
+      "description": "Mysterious beings who can take on different forms.",
+      "abilities": [
+        "Form changing",
+        "Stealth bonus",
+        "Adaptability"
+      ],
+      "imageSrc": "/nations/nation1.jpg"
+    },
+    {
+      "name": "Angel",
+      "description": "Celestial beings with flight abilities and healing powers.",
+      "abilities": [
+        "Limited flight",
+        "Healing aura",
+        "Light magic"
+      ],
+      "imageSrc": "/nations/nation2.jpg"
+    },
+    {
+      "name": "Plant",
+      "description": "Nature-connected beings who can photosynthesize and control plants.",
+      "abilities": [
+        "Photosynthesis",
+        "Plant control",
+        "Poison immunity"
+      ],
+      "imageSrc": "/nations/nation2.jpg"
+    }
+  ],
+  "timelineEvents": [
+    {
+      "year": "Year 1",
+      "title": "The Great Founding",
+      "description": "The first nations were established across Agiya as explorers settled the untamed lands."
+    },
+    {
+      "year": "Year 1.5",
+      "title": "The Nether War",
+      "description": "Demons invaded from the nether, leading to the first major conflict between nations."
+    },
+    {
+      "year": "Year 2",
+      "title": "The Age of Alliances",
+      "description": "Nations formed the first major alliances, establishing trade routes and diplomatic relations."
+    },
+    {
+      "year": "Year 2.5",
+      "title": "The Magical Renaissance",
+      "description": "A surge in magical discoveries led to new technologies and abilities across the world."
+    },
+    {
+      "year": "Year 3",
+      "title": "The Great Expansion",
+      "description": "The world expanded as explorers discovered new lands beyond the known borders."
+    },
+    {
+      "year": "Present",
+      "title": "The Age of Opportunity",
+      "description": "New adventurers arrive daily, shaping the future of Agiya with their actions."
     }
   ]
 }

@@ -4,108 +4,30 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Users, MapPin, Crown, Shield, Scroll, Clock } from "lucide-react"
+import { races as racesData, timelineEvents as timelineEventsData } from "@/lib/data.json"
 
 export default function AboutPage() {
-  // Race data
-  const races = [
-    {
-      name: "Human",
-      description: "Versatile and adaptable, humans excel at diplomacy and trade.",
-      abilities: ["Diplomatic advantage", "Trade bonuses", "Faster skill learning"],
-      imageSrc: "/race-human.jpg",
-    },
-    {
-      name: "Neko",
-      description: "Cat-like beings with enhanced agility and night vision.",
-      abilities: ["Night vision", "Fall damage reduction", "Enhanced speed"],
-      imageSrc: "/race-neko.jpg",
-    },
-    {
-      name: "Demon",
-      description: "Beings from the nether with fire resistance and combat prowess.",
-      abilities: ["Fire resistance", "Combat strength", "Nether affinity"],
-      imageSrc: "/race-demon.jpg",
-    },
-    {
-      name: "Dragonborn",
-      description: "Descendants of dragons with natural armor and breath abilities.",
-      abilities: ["Natural armor", "Breath weapon", "Mining efficiency"],
-      imageSrc: "/race-dragonborn.jpg",
-    },
-    {
-      name: "Elf",
-      description: "Ancient forest dwellers with magical affinity and archery skills.",
-      abilities: ["Magic affinity", "Archery bonus", "Forest navigation"],
-      imageSrc: "/race-elf.jpg",
-    },
-    {
-      name: "Dwarf",
-      description: "Master craftsmen with resistance to poison and mining expertise.",
-      abilities: ["Crafting bonus", "Poison resistance", "Mining expertise"],
-      imageSrc: "/race-dwarf.jpg",
-    },
-    {
-      name: "Shapeshifter",
-      description: "Mysterious beings who can take on different forms.",
-      abilities: ["Form changing", "Stealth bonus", "Adaptability"],
-      imageSrc: "/race-shapeshifter.jpg",
-    },
-    {
-      name: "Angel",
-      description: "Celestial beings with flight abilities and healing powers.",
-      abilities: ["Limited flight", "Healing aura", "Light magic"],
-      imageSrc: "/race-angel.jpg",
-    },
-    {
-      name: "Plant",
-      description: "Nature-connected beings who can photosynthesize and control plants.",
-      abilities: ["Photosynthesis", "Plant control", "Poison immunity"],
-      imageSrc: "/race-plant.jpg",
-    },
-  ]
+  // Race data from data.json
+  const races = racesData
 
-  // Timeline events
-  const timelineEvents = [
-    {
-      year: "Year 1",
-      title: "The Great Founding",
-      description: "The first nations were established across Agiya as explorers settled the untamed lands.",
-    },
-    {
-      year: "Year 1.5",
-      title: "The Nether War",
-      description: "Demons invaded from the nether, leading to the first major conflict between nations.",
-    },
-    {
-      year: "Year 2",
-      title: "The Age of Alliances",
-      description: "Nations formed the first major alliances, establishing trade routes and diplomatic relations.",
-    },
-    {
-      year: "Year 2.5",
-      title: "The Magical Renaissance",
-      description: "A surge in magical discoveries led to new technologies and abilities across the world.",
-    },
-    {
-      year: "Year 3",
-      title: "The Great Expansion",
-      description: "The world expanded as explorers discovered new lands beyond the known borders.",
-    },
-    {
-      year: "Present",
-      title: "The Age of Opportunity",
-      description: "New adventurers arrive daily, shaping the future of Agiya with their actions.",
-    },
-  ]
+  // Timeline events from data.json
+  const timelineEvents = timelineEventsData
 
   return (
     <div className="page-transition pt-20">
       {/* Hero Section */}
-      <section className="bg-muted py-12 md:py-20">
+      <section
+        className="bg-muted py-12 md:py-20 relative"
+        style={{
+          backgroundImage: "url('/primary/about.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="container px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Ashea</h1>
-            <p className="text-lg text-muted-foreground mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-green-500 green-text-glow">About Ashea</h1>
+            <p className="text-lg text-muted-foreground mb-8 text-white">
               Discover the rich history, unique features, and vibrant community that make Ashea special.
             </p>
           </div>
@@ -144,7 +66,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="fantasy-border rounded-lg overflow-hidden">
                 <Image
-                  src="/community-image.jpg"
+                  src="/primary/payments.png"
                   alt="Ashea Community"
                   width={600}
                   height={400}
@@ -208,7 +130,7 @@ export default function AboutPage() {
             <div className="order-1 lg:order-2 relative">
               <div className="fantasy-border rounded-lg overflow-hidden">
                 <Image
-                  src="/world-landscape.jpg"
+                  src="/primary/world-map.jpg"
                   alt="World of Agiya Landscape"
                   width={600}
                   height={400}
@@ -237,7 +159,7 @@ export default function AboutPage() {
             {races.map((race, index) => (
               <Card key={index} className="nation-card bg-card/50 backdrop-blur-sm border-primary/20 overflow-hidden">
                 <div className="h-40 relative">
-                  <Image src={race.imageSrc || "/placeholder.svg"} alt={race.name} fill className="object-cover" />
+                  <Image src={race.imageSrc || "/primary/background-img.png"} alt={race.name} fill className="object-cover" />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="font-cinzel font-bold text-xl mb-2">{race.name}</h3>
@@ -356,7 +278,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="fantasy-border rounded-lg overflow-hidden">
                 <Image
-                  src="/community-values.jpg"
+                  src="primary/nations.png"
                   alt="Ashea Community Values"
                   width={600}
                   height={400}

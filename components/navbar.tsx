@@ -36,7 +36,7 @@ const Navbar = () => {
     >
       <div className="container flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/logo.png" alt="Ashea Logo" width={40} height={40} className="w-10 h-10" />
+          <Image src="/primary/logo.png" alt="Ashea Logo" width={40} height={40} className="w-10 h-10" />
           <span className="font-cinzel font-bold text-2xl text-primary green-text-glow">ASHEA</span>
         </Link>
 

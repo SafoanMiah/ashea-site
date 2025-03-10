@@ -48,7 +48,7 @@ export default function NationsPage() {
       <div className="wiki-card mb-8 glass-panel-hover">
         <div className="flex flex-col md:flex-row gap-6">
           <div className="relative h-48 md:h-auto md:w-1/3 wiki-image">
-            <Image src="/placeholder.svg?height=300&width=400" alt="Featured Nation" fill className="object-cover" />
+            <Image src="/primary/background-img.png?height=300&width=400" alt="Featured Nation" fill className="object-cover" />
           </div>
           <div className="md:w-2/3">
             <Badge className="mb-2 bg-primary/10 text-primary">Featured Nation</Badge>
@@ -193,7 +193,7 @@ export default function NationsPage() {
         <h2 className="text-xl font-bold mb-4 text-primary">Nation Map</h2>
         <p className="mb-4">Current political map of Ashea showing nation territories.</p>
         <div className="relative h-80 wiki-image">
-          <Image src="/placeholder.svg?height=500&width=800" alt="Ashea Political Map" fill className="object-cover" />
+          <Image src="/primary/background-img.png?height=500&width=800" alt="Ashea Political Map" fill className="object-cover" />
         </div>
       </div>
     </div>

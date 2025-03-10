@@ -5,32 +5,21 @@ import { Users, User } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import wikiData from "@/lib/wiki-data.json"
+import { races as racesData } from "@/lib/data.json"
 
 export default function RacesPage() {
   // Convert races data to table rows
   const racesRows = wikiData.races.mainSpecies.map((race) => [race.race, race.subspecies])
 
-  // Sample race cards data
+  // Featured races from data.json
   const featuredRaces = [
-    {
-      name: "Human",
-      description: "Versatile and adaptable, humans excel at diplomacy and trade.",
-      abilities: ["Diplomatic advantage", "Trade bonuses", "Faster skill learning"],
-      imageSrc: "/placeholder.svg?height=200&width=300",
-    },
-    {
-      name: "Neko",
-      description: "Cat-like beings with enhanced agility and night vision.",
-      abilities: ["Night vision", "Fall damage reduction", "Enhanced speed"],
-      imageSrc: "/placeholder.svg?height=200&width=300",
-    },
-    {
-      name: "Dragonborn",
-      description: "Descendants of dragons with natural armor and breath abilities.",
-      abilities: ["Natural armor", "Breath weapon", "Mining efficiency"],
-      imageSrc: "/placeholder.svg?height=200&width=300",
-    },
-  ]
+    racesData[0], // Human
+    racesData[1], // Neko
+    racesData[3], // Dragonborn
+  ].map(race => ({
+    ...race,
+    imageSrc: race.imageSrc || "/primary/background-img.png?height=200&width=300"
+  }))
 
   return (
     <div className="page-transition">
@@ -50,7 +39,7 @@ export default function RacesPage() {
           {featuredRaces.map((race, index) => (
             <div key={index} className="wiki-card glass-panel-hover">
               <div className="relative h-40 wiki-image mb-4">
-                <Image src={race.imageSrc || "/placeholder.svg"} alt={race.name} fill className="object-cover" />
+                <Image src={race.imageSrc || "/primary/background-img.png"} alt={race.name} fill className="object-cover" />
               </div>
               <h3 className="text-xl font-bold mb-2 text-primary">{race.name}</h3>
               <p className="text-muted-foreground mb-4">{race.description}</p>
@@ -128,7 +117,7 @@ export default function RacesPage() {
         <p className="mb-4">Map showing the distribution of races across the world of Ashea.</p>
         <div className="relative h-80 wiki-image">
           <Image
-            src="/placeholder.svg?height=500&width=800"
+            src="/primary/background-img.png?height=500&width=800"
             alt="Ashea Race Distribution Map"
             fill
             className="object-cover"
