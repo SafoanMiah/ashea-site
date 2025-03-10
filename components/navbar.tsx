@@ -49,7 +49,7 @@ const Navbar = () => {
             Store
           </Link>
           <Link href="/nations" className="text-foreground/80 hover:text-primary transition-colors">
-            Nation Picker
+            Nations
           </Link>
           <Link href="/wiki" className="text-foreground/80 hover:text-primary transition-colors">
             Wiki
