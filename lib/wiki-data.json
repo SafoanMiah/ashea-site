@@ -14,8 +14,8 @@
       "description": "All categories featuring server content directly influenced or created by the players",
       "subcategories": [
         {
-          "name": "Nations",
-          "slug": "nations",
+          "name": "Regions",
+          "slug": "Regions",
           "icon": "Flag"
         },
         {
@@ -72,13 +72,13 @@
       ]
     }
   ],
-  "nations": {
+  "Regions": {
     "current": [
       {
         "name": "The Akaimo Imperium",
         "foundingDate": "November 4th, 2024",
         "lastUpdated": "11/6/2024",
-        "note": "non Agiyan nation"
+        "note": "non Agiyan region"
       },
       {
         "name": "Avalon",
@@ -133,7 +133,7 @@
     ],
     "cityStates": [
       {
-        "name": "Nation of Damnation",
+        "name": "region of Damregion",
         "foundingDate": "August 2nd, 2024",
         "lastUpdated": "n/A"
       },
@@ -317,11 +317,11 @@
         "date": "Ongoing"
       },
       {
-        "name": "The Damnation Campaign",
+        "name": "The Damregion Campaign",
         "type": "RP Announcement War",
         "belligerents": [
           "The Chayuthaya Empire",
-          "Damnation"
+          "Damregion"
         ],
         "winner": "The Chayuthaya Empire",
         "date": "10/17/24"

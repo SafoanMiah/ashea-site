@@ -55,11 +55,11 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/nations"
+                  href="/Regions"
                   className="text-sm text-muted-foreground hover:text-primary flex items-center gap-2"
                 >
                   <Flag size={16} className="text-primary" />
-                  <span>Nation Picker</span>
+                  <span>region Picker</span>
                 </Link>
               </li>
               <li>

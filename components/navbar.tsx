@@ -48,8 +48,8 @@ const Navbar = () => {
           <Link href="/store" className="text-foreground/80 hover:text-primary transition-colors">
             Store
           </Link>
-          <Link href="/nations" className="text-foreground/80 hover:text-primary transition-colors">
-            Nations
+          <Link href="/Regions" className="text-foreground/80 hover:text-primary transition-colors">
+            Regions
           </Link>
           <Link href="/wiki" className="text-foreground/80 hover:text-primary transition-colors">
             Wiki
@@ -84,11 +84,11 @@ const Navbar = () => {
               Store
             </Link>
             <Link
-              href="/nations"
+              href="/regions"
               className="text-foreground/80 hover:text-primary transition-colors py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Nation Picker
+              Regions Picker
             </Link>
             <Link
               href="/wiki"

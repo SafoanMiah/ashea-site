@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Shield } from "lucide-react"
 import { Carousel } from "@/components/carousel"
-import { NationCard } from "@/components/nation-card"
+import { regionCard } from "@/components/region-card"
 import { StoreItemCard } from "@/components/store-item-card"
 // Remove this import
 // import { PaymentOptions } from "@/components/payment-options"
@@ -104,19 +104,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Remove duplicate Introduction Section and go directly to Featured Nations */}
-      {/* Featured Nations Carousel */}
+      {/* Remove duplicate Introduction Section and go directly to Featured Regions */}
+      {/* Featured Regions Carousel */}
       <section className="py-16 md:py-24 green-bg-light">
         <div className="container px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Nations of Agiya</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Regions of Agiya</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Explore the established nations in our world, each with their own unique culture, government, and
+              Explore the established Regions in our world, each with their own unique culture, government, and
               history.
             </p>
           </div>
 
-          <Suspense fallback={<div>Loading nations...</div>}>
+          <Suspense fallback={<div>Loading Regions...</div>}>
             <Carousel
               itemsToShow={3}
               showDots={true}
@@ -126,15 +126,15 @@ export default function Home() {
               autoPlaySpeed={5000}
               pauseOnHover={true}
             >
-              {data.nations.map((nation) => (
-                <div key={nation.id} className="px-2">
-                  <NationCard nation={nation} />
+              {data.Regions.map((region) => (
+                <div key={region.id} className="px-2">
+                  <regionCard region={region} />
                 </div>
               ))}
             </Carousel>
           </Suspense>
 
-          {/* Remove the "View All Nations" button and link */}
+          {/* Remove the "View All Regions" button and link */}
         </div>
       </section>
 

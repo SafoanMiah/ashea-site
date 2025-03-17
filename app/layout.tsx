@@ -14,8 +14,8 @@ const cinzel = Cinzel({
 })
 
 export const metadata = {
-  title: "Ashea - Fantasy Roleplay & Geopolitics Minecraft Server",
-  description: "Join Ashea, a fantasy roleplay and geopolitics Minecraft server with custom races, nations, quests, and a rich 3+ year history.",
+  title: "Ashea - Fantasy Roleplay Minecraft Server",
+  description: "Join Ashea, a fantasy roleplay Minecraft server with custom races, Regions, quests, and a rich 3+ year history.",
   icons: {
     icon: '/favicon.png',
   },

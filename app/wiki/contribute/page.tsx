@@ -26,7 +26,7 @@ export default function ContributePage() {
               elements of our server. By contributing, you help preserve the stories and achievements of our community.
             </p>
             <p className="mb-4">
-              Whether you're documenting your nation's history, creating guides for new players, or adding information
+              Whether you're documenting your region's history, creating guides for new players, or adding information
               about game mechanics, your contributions are valuable to the entire community.
             </p>
             <div className="flex gap-4">

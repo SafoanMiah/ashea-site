@@ -97,12 +97,12 @@ export default function PlayersPage() {
           <div className="relative h-64 wiki-image">
             <Image
               src="/primary/background-img.png?height=300&width=400"
-              alt="Player Nation Distribution"
+              alt="Player region Distribution"
               fill
               className="object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-              <p className="text-white font-bold text-lg">Nation Distribution</p>
+              <p className="text-white font-bold text-lg">region Distribution</p>
             </div>
           </div>
         </div>

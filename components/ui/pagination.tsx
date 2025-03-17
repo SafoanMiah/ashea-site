@@ -4,17 +4,17 @@ import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ButtonProps, buttonVariants } from "@/components/ui/button"
 
-const Pagination = ({ className, ...props }: React.ComponentProps<"nav">) => (
+const Pagiregion = ({ className, ...props }: React.ComponentProps<"nav">) => (
   <nav
     role="navigation"
-    aria-label="pagination"
+    aria-label="pagiregion"
     className={cn("mx-auto flex w-full justify-center", className)}
     {...props}
   />
 )
-Pagination.displayName = "Pagination"
+Pagiregion.displayName = "Pagiregion"
 
-const PaginationContent = React.forwardRef<
+const PagiregionContent = React.forwardRef<
   HTMLUListElement,
   React.ComponentProps<"ul">
 >(({ className, ...props }, ref) => (
@@ -24,27 +24,27 @@ const PaginationContent = React.forwardRef<
     {...props}
   />
 ))
-PaginationContent.displayName = "PaginationContent"
+PagiregionContent.displayName = "PagiregionContent"
 
-const PaginationItem = React.forwardRef<
+const PagiregionItem = React.forwardRef<
   HTMLLIElement,
   React.ComponentProps<"li">
 >(({ className, ...props }, ref) => (
   <li ref={ref} className={cn("", className)} {...props} />
 ))
-PaginationItem.displayName = "PaginationItem"
+PagiregionItem.displayName = "PagiregionItem"
 
-type PaginationLinkProps = {
+type PagiregionLinkProps = {
   isActive?: boolean
 } & Pick<ButtonProps, "size"> &
   React.ComponentProps<"a">
 
-const PaginationLink = ({
+const PagiregionLink = ({
   className,
   isActive,
   size = "icon",
   ...props
-}: PaginationLinkProps) => (
+}: PagiregionLinkProps) => (
   <a
     aria-current={isActive ? "page" : undefined}
     className={cn(
@@ -57,13 +57,13 @@ const PaginationLink = ({
     {...props}
   />
 )
-PaginationLink.displayName = "PaginationLink"
+PagiregionLink.displayName = "PagiregionLink"
 
-const PaginationPrevious = ({
+const PagiregionPrevious = ({
   className,
   ...props
-}: React.ComponentProps<typeof PaginationLink>) => (
-  <PaginationLink
+}: React.ComponentProps<typeof PagiregionLink>) => (
+  <PagiregionLink
     aria-label="Go to previous page"
     size="default"
     className={cn("gap-1 pl-2.5", className)}
@@ -71,15 +71,15 @@ const PaginationPrevious = ({
   >
     <ChevronLeft className="h-4 w-4" />
     <span>Previous</span>
-  </PaginationLink>
+  </PagiregionLink>
 )
-PaginationPrevious.displayName = "PaginationPrevious"
+PagiregionPrevious.displayName = "PagiregionPrevious"
 
-const PaginationNext = ({
+const PagiregionNext = ({
   className,
   ...props
-}: React.ComponentProps<typeof PaginationLink>) => (
-  <PaginationLink
+}: React.ComponentProps<typeof PagiregionLink>) => (
+  <PagiregionLink
     aria-label="Go to next page"
     size="default"
     className={cn("gap-1 pr-2.5", className)}
@@ -87,11 +87,11 @@ const PaginationNext = ({
   >
     <span>Next</span>
     <ChevronRight className="h-4 w-4" />
-  </PaginationLink>
+  </PagiregionLink>
 )
-PaginationNext.displayName = "PaginationNext"
+PagiregionNext.displayName = "PagiregionNext"
 
-const PaginationEllipsis = ({
+const PagiregionEllipsis = ({
   className,
   ...props
 }: React.ComponentProps<"span">) => (
@@ -104,14 +104,14 @@ const PaginationEllipsis = ({
     <span className="sr-only">More pages</span>
   </span>
 )
-PaginationEllipsis.displayName = "PaginationEllipsis"
+PagiregionEllipsis.displayName = "PagiregionEllipsis"
 
 export {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
+  Pagiregion,
+  PagiregionContent,
+  PagiregionEllipsis,
+  PagiregionItem,
+  PagiregionLink,
+  PagiregionNext,
+  PagiregionPrevious,
 }

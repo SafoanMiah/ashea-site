@@ -48,16 +48,16 @@ export default function AboutPage() {
               </p>
               <p className="text-muted-foreground mb-8">
                 We're a small and friendly community of roleplayers, nerds, and wannabe dictators who play on a
-                Minecraft server with custom fantasy races, quests, nations, wars, diplomacy, and a continuously
+                Minecraft server with custom fantasy races, quests, Regions, wars, diplomacy, and a continuously
                 evolving world.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/join">
                   <Button className="bg-primary hover:bg-primary/80 text-primary-foreground">Join Our Community</Button>
                 </Link>
-                <Link href="/nations">
+                <Link href="/Regions">
                   <Button variant="outline" className="gap-2">
-                    Explore Nations
+                    Explore Regions
                     <ArrowRight size={16} />
                   </Button>
                 </Link>
@@ -157,7 +157,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {races.map((race, index) => (
-              <Card key={index} className="nation-card bg-card/50 backdrop-blur-sm border-primary/20 overflow-hidden">
+              <Card key={index} className="region-card bg-card/50 backdrop-blur-sm border-primary/20 overflow-hidden">
                 <div className="h-40 relative">
                   <Image src={race.imageSrc || "/primary/background-img.png"} alt={race.name} fill className="object-cover" />
                 </div>
@@ -244,7 +244,7 @@ export default function AboutPage() {
                   <div>
                     <h3 className="font-semibold mb-1">Creative Freedom</h3>
                     <p className="text-sm text-muted-foreground">
-                      Express yourself through roleplay, building, and nation development.
+                      Express yourself through roleplay, building, and region development.
                     </p>
                   </div>
                 </li>
@@ -278,7 +278,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="fantasy-border rounded-lg overflow-hidden">
                 <Image
-                  src="primary/nations.png"
+                  src="/primary/Regions.png"
                   alt="Ashea Community Values"
                   width={600}
                   height={400}
@@ -304,9 +304,9 @@ export default function AboutPage() {
                   Join Ashea
                 </Button>
               </Link>
-              <Link href="/nations">
+              <Link href="/Regions">
                 <Button size="lg" variant="outline" className="gap-2">
-                  Explore Nations
+                  Explore Regions
                   <ArrowRight size={16} />
                 </Button>
               </Link>

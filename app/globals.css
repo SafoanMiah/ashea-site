@@ -101,12 +101,12 @@
   box-shadow: 0 8px 30px rgba(46, 125, 50, 0.25);
 }
 
-.nation-card {
+.region-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-color: rgba(46, 125, 50, 0.3);
 }
 
-.nation-card:hover {
+.region-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(46, 125, 50, 0.3);
   border-color: rgba(46, 125, 50, 0.6);

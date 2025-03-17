@@ -1,0 +1,299 @@
+wikiInfo:
+  title: AsheaRP Wiki
+  description: Ashea is a minecraft fantasy-roleplay server that has thrived for 3 years with politics, history, and custom content! This public and editable wiki will store information regarding Ashea, its history, and all of its features for years to come!
+  joinInfo:
+    serverIp: ashea.org
+    version: 1.20+
+    discord: discord.gg/ashea
+
+categories:
+  - title: Players & History
+    description: All categories featuring server content directly influenced or created by the players
+    subcategories:
+      - name: Regions
+        slug: Regions
+        icon: Flag
+      - name: Wars
+        slug: wars
+        icon: Swords
+      - name: Locations
+        slug: locations
+        icon: MapPin
+      - name: Players
+        slug: players
+        icon: Users
+      - name: People
+        slug: people
+        icon: User
+
+  - title: Content & Lore
+    description: All categories featuring server content and lore that may not be directly influenced by the players
+    subcategories:
+      - name: Misc
+        slug: misc
+        icon: FileQuestion
+      - name: Guides
+        slug: guides
+        icon: BookOpen
+      - name: Items
+        slug: items
+        icon: Sword
+      - name: Lore
+        slug: lore
+        icon: Scroll
+      - name: Races
+        slug: races
+        icon: Users
+
+Regions:
+  current:
+    - name: The Akaimo Imperium
+      foundingDate: November 4th, 2024
+      lastUpdated: 11/6/2024
+      note: non Agiyan region
+    - name: Avalon
+      foundingDate: June 24th, 2024
+      lastUpdated: 11/6/2024
+    - name: The Federation of Grog
+      foundingDate: August 8th 2024
+      lastUpdated: 11/6/2024
+    - name: Royaume Madárès
+      foundingDate: Unknown
+      lastUpdated: 11/6/2024
+    - name: Infernus Regnum
+      foundingDate: Unknown
+      lastUpdated: 11/6/2024
+    - name: United Socialist States of the North
+      foundingDate: Unknown
+      lastUpdated: 11/6/2024
+    - name: The Iron Sun Imperium
+      foundingDate: Unknown
+      lastUpdated: 11/6/2024
+    - name: The Austerly Steppe
+      foundingDate: Unknown
+      lastUpdated: 11/6/2024
+    - name: The Gearlock Dominion
+      foundingDate: October 22nd 2024
+      lastUpdated: 11/6/2024
+    - name: The United Tanju Territories
+      foundingDate: October 31st 2024
+      lastUpdated: 11/6/2024
+    - name: Conchordia
+      foundingDate: Unknown
+      lastUpdated: 11/6/2024
+
+  cityStates:
+    - name: region of Damregion
+      foundingDate: August 2nd, 2024
+      lastUpdated: n/A
+    - name: Republic of Verdiantia
+      foundingDate: October 25th, 2024
+      lastUpdated: n/A
+    - name: Eladris
+      foundingDate: Unknown
+      lastUpdated: n/A
+    - name: Ghelacia
+      foundingDate: Unknown
+      lastUpdated: n/A
+    - name: Etharium
+      foundingDate: Unknown
+      lastUpdated: n/A
+
+  internalDivisions:
+    - name: Liútǎng
+      divisionOf: The Federation of Grog
+      foundingDate: August 22nd, 2024
+      lastUpdated: 9/2/24
+    - name: The O'lanoris Clan
+      divisionOf: The Federation of Grog
+      foundingDate: August 1st, 2024
+      lastUpdated: 9/3/24
+    - name: Belouria
+      divisionOf: The United Tanju Territories
+      foundingDate: August 4th, 2024
+      lastUpdated: 10/15/24
+    - name: The Kōhaku Clan
+      divisionOf: The United Tanju Territories
+      foundingDate: July 27th, 2024
+      lastUpdated: 10/15/24
+    - name: Silvaria providence
+      divisionOf: The Akaimo Imperium
+      foundingDate: Unknown
+      lastUpdated: 10/16/2024
+
+  otherLands: []
+
+  collapsed:
+    - name: The Chayuthaya Empire
+      foundingDate: June 23rd, 2024
+      collapseDate: November 1st, 2024
+      type: Empire
+      lastUpdated: 11/2/2024
+    - name: Akaimo Dynasty
+      foundingDate: June 23rd, 2024
+      collapseDate: November 1st, 2024
+      type: State of the Chayuthaya Empire
+      lastUpdated: 10/15/24
+    - name: The United North
+      foundingDate: August 27th 2024
+      collapseDate: October 24th, 2024
+      type: Empire
+      lastUpdated: 9/2/2024
+    - name: Mokushu Clan
+      foundingDate: n/A
+      collapseDate: n/A
+      type: Independent Faction
+      lastUpdated: 10/15/24
+
+  pages:
+    - Imperium Sanctum Solaris
+
+wars:
+  agiyanWars:
+    - name: The Chayuthaya-Madarian War
+      battles:
+        - The Arch Dragon Peak Counteroffensive
+        - The Siege of Mikoto
+        - The Battle of the Oakwood Hills
+        - The Siege of Varos
+        - The Siege of Hochberg
+        - The Battle of Oryza
+      belligerents:
+        - The Chayuthaya Empire
+        - Royaume Madárès
+        - The Kingdom of Oryza
+        - The Etharium Empire
+      winner: The Chayuthaya Empire
+      startDate: 8/11/24
+      endDate: 10/16/24
+    - name: The United North Coup
+      battles:
+        - The Siege of Aesir
+      belligerents:
+        - The United North
+        - United North Revolutionists
+      winner: United North Revolutionists
+      startDate: Unknown
+      endDate: Unknown
+
+  battles:
+    - name: The Arch Dragon Peak Counteroffensive
+      war: The Chayuthaya-Madarian War
+      winner: Royaume Madárès
+      date: 8/25/24
+    - name: The Siege of Mikoto
+      war: The Chayuthaya-Madarian War
+      winner: The Chayuthaya Empire
+      date: 8/25/24
+    - name: The Battle of the Oakwood Hills
+      war: The Chayuthaya-Madarian War
+      winner: The Chayuthaya Empire
+      date: 9/29/24
+    - name: The Siege of Varos
+      war: The Chayuthaya-Madarian War
+      winner: The Chayuthaya Empire
+      date: 9/29/24
+    - name: The Siege of Hochberg
+      war: The Chayuthaya-Madarian War
+      winner: The Chayuthaya Empire
+      date: 10/13/24
+    - name: The Battle of Oryza
+      war: The Chayuthaya-Madarian War
+      winner: The Chayuthaya Empire
+      date: 10/13/24
+    - name: The Siege of Aesir
+      war: The United North Coup
+      winner: The United North Rebels, The Chayuthayan Empire, The Kingdom of Madar
+      date: 9/1/24
+
+  loreWars:
+    - name: Mythros' War
+      type: Server Event
+      belligerents:
+        - The Lockwood Empire
+        - The Baker's Rebellion
+      winner: TBD
+      date: Ongoing
+    - name: The Damregion Campaign
+      type: RP Announcement War
+      belligerents:
+        - The Chayuthaya Empire
+        - Damregion
+      winner: The Chayuthaya Empire
+      date: 10/17/24
+    - name: The Cornflower Campaign
+      type: RP Announcement War
+      belligerents:
+        - The Chayuthaya Empire
+        - Republic of Cornflower
+      winner: The Chayuthaya Empire
+      date: 10/19/24
+
+  pages:
+    - Raid on Trivia City
+
+players:
+  list:
+    - name: Scar883
+      rank: Owner
+      ocs: Unknown
+    - name: TunaFishy
+      rank: Leadership (Lead of Moderation & Events)
+      ocs: Empress Koyuki Akaimo and Valeria Hadroni
+    - name: Voleia
+      rank: Leadership (Lead of Development)
+      ocs: Unknown
+    - name: AlanLime
+      rank: Leadership
+      ocs: Unknown
+    - name: humjungulous
+      rank: Artist
+      ocs: Tsuji Kōhaku
+    - name: PiggChan
+      rank: Streamer and Trial Mod. Member of the Media Team
+      ocs: Unknown
+    - name: Foxman100
+      rank: Lord Rank and Helper
+      ocs: King Bunky Galgrog and Captain Dragonunky
+    - name: Fragmentate
+      rank: Knight
+      ocs: Payepa Mokushu, Taoma Takuragi, and 2 others
+    - name: PaperTiger47
+      rank: Traveller
+      ocs: Claire
+    - name: GTNNN1910
+      rank: Traveller
+      ocs: Qiān Zú and Uta Kenaze
+    - name: Mavereich
+      rank: Traveller
+      ocs: Maverich von Hochberg, Charles de Hochberg-Bastié, Joachim de Hochberg-Bastié
+    - name: Furiousg8mer
+      rank: Traveller
+      ocs: Bonsam
+
+  pages: []
+
+races:
+  mainSpecies:
+    - race: Human
+      subspecies: None
+    - race: Neko
+      subspecies: Cat Nekos, Fox Nekos, & Wolf Nekos
+    - race: Elf
+      subspecies: Wood Elves, High Elves, and Snow Elves (extinct)
+    - race: Dwarf
+      subspecies: None
+    - race: Dragonborn
+      subspecies: Ice Dragonborn and Fire Dragonborn
+    - race: Ambystoma
+      subspecies: Cold Water Ambystoma and Warm Water Ambystoma
+    - race: Demon
+      subspecies: Normal Demons, Oni Demons, and Succubus Demons
+    - race: Dark Elves
+      subspecies: None
+    - race: Wraith
+      subspecies: None
+
+  pages:
+    - Dark Elves
+    - Dragonborn

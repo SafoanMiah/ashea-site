@@ -102,11 +102,11 @@ export default function WikiHomePage() {
                     <h3 className="font-bold text-primary">The Chayuthaya Empire Collapse</h3>
                     <p className="text-sm text-muted-foreground">Updated on November 2nd, 2024</p>
                   </div>
-                  <Badge className="bg-primary/20 text-primary border-primary/30">Nations</Badge>
+                  <Badge className="bg-primary/20 text-primary border-primary/30">Regions</Badge>
                 </div>
                 <div className="relative h-32 wiki-image mb-3 green-shadow">
                   <Image
-                    src="/primary/nations.png?height=200&width=400"
+                    src="/primary/Regions.png?height=200&width=400"
                     alt="Chayuthaya Empire"
                     fill
                     className="object-cover"
@@ -116,7 +116,7 @@ export default function WikiHomePage() {
                   The once-mighty Chayuthaya Empire has fallen after a series of internal conflicts and external
                   pressures.
                 </p>
-                <Link href="/wiki/nations" className="text-primary hover:underline flex items-center gap-1 group">
+                <Link href="/wiki/Regions" className="text-primary hover:underline flex items-center gap-1 group">
                   Read more <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>

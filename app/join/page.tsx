@@ -14,7 +14,7 @@ export default function JoinPage() {
       <section
         className="bg-muted py-12 md:py-20 relative"
         style={{
-          backgroundImage: "url('/primary/nations.png')",
+          backgroundImage: "url('/primary/Regions.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -136,7 +136,7 @@ export default function JoinPage() {
                 <h3 className="font-cinzel font-bold text-xl mb-3">Join Discord</h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   Our Discord server is where most of the community interaction happens. Join to connect with other
-                  players and nations.
+                  players and Regions.
                 </p>
                 <Link href="https://discord.gg/ashea" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" className="gap-2 w-full">
@@ -152,14 +152,14 @@ export default function JoinPage() {
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="font-cinzel font-bold text-xl text-primary">2</span>
                 </div>
-                <h3 className="font-cinzel font-bold text-xl mb-3">Choose a Nation</h3>
+                <h3 className="font-cinzel font-bold text-xl mb-3">Choose a region</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Browse our nation advertisements in Discord and find a community that matches your playstyle and
+                  Browse our region advertisements in Discord and find a community that matches your playstyle and
                   interests.
                 </p>
-                <Link href="/nations">
+                <Link href="/Regions">
                   <Button variant="outline" className="gap-2 w-full">
-                    Nation Picker
+                    region Picker
                     <ArrowRight size={16} />
                   </Button>
                 </Link>
@@ -194,13 +194,13 @@ export default function JoinPage() {
             <div className="order-2 lg:order-1">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Discord Community</h2>
               <p className="text-muted-foreground mb-6">
-                Our Discord server is the heart of the Ashea community. This is where nations form, roleplay happens,
+                Our Discord server is the heart of the Ashea community. This is where Regions form, roleplay happens,
                 and you'll find all the resources you need to get started.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
-                  <Badge className="mt-1 flex-shrink-0">#nation-advertisements</Badge>
-                  <span>Browse existing nations and find your perfect fit</span>
+                  <Badge className="mt-1 flex-shrink-0">#region-advertisements</Badge>
+                  <span>Browse existing Regions and find your perfect fit</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Badge className="mt-1 flex-shrink-0">#oc-bios</Badge>
@@ -270,10 +270,10 @@ export default function JoinPage() {
 
             <Card className="border-primary/20">
               <CardContent className="p-6">
-                <h3 className="font-cinzel font-bold text-xl mb-3">Do I have to join a nation?</h3>
+                <h3 className="font-cinzel font-bold text-xl mb-3">Do I have to join a region?</h3>
                 <p className="text-muted-foreground">
-                  While joining a nation is encouraged for the full roleplay experience, you can also play as a lone
-                  wanderer or even start your own nation if you gather enough players.
+                  While joining a region is encouraged for the full roleplay experience, you can also play as a lone
+                  wanderer or even start your own region if you gather enough players.
                 </p>
               </CardContent>
             </Card>

@@ -91,7 +91,7 @@ export default function StorePage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Other Ways to Support</h2>
             <p className="text-muted-foreground mb-6">
-              There are many ways to support Ashea beyond donations. Participate in the community, help new players,
+              There are many ways to support Ashea beyond doRegions. Participate in the community, help new players,
               create content, or spread the word about our server!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
